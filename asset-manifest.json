@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/getmytic/static/css/main.f30d20bd.chunk.css",
-    "main.js": "/getmytic/static/js/main.a0850ba1.chunk.js",
-    "main.js.map": "/getmytic/static/js/main.a0850ba1.chunk.js.map",
-    "runtime-main.js": "/getmytic/static/js/runtime-main.ff54d012.js",
-    "runtime-main.js.map": "/getmytic/static/js/runtime-main.ff54d012.js.map",
-    "static/css/2.df271bf3.chunk.css": "/getmytic/static/css/2.df271bf3.chunk.css",
-    "static/js/2.6fce863e.chunk.js": "/getmytic/static/js/2.6fce863e.chunk.js",
-    "static/js/2.6fce863e.chunk.js.map": "/getmytic/static/js/2.6fce863e.chunk.js.map",
-    "static/js/3.cde24500.chunk.js": "/getmytic/static/js/3.cde24500.chunk.js",
-    "static/js/3.cde24500.chunk.js.map": "/getmytic/static/js/3.cde24500.chunk.js.map",
-    "index.html": "/getmytic/index.html",
-    "static/css/2.df271bf3.chunk.css.map": "/getmytic/static/css/2.df271bf3.chunk.css.map",
-    "static/css/main.f30d20bd.chunk.css.map": "/getmytic/static/css/main.f30d20bd.chunk.css.map",
-    "static/js/2.6fce863e.chunk.js.LICENSE.txt": "/getmytic/static/js/2.6fce863e.chunk.js.LICENSE.txt",
-    "static/media/Madmin.css": "/getmytic/static/media/admin.877a59f3.jpg"
+    "main.css": "/static/css/main.d06164d9.chunk.css",
+    "main.js": "/static/js/main.a0850ba1.chunk.js",
+    "main.js.map": "/static/js/main.a0850ba1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.36cd6bc3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.36cd6bc3.js.map",
+    "static/css/2.df271bf3.chunk.css": "/static/css/2.df271bf3.chunk.css",
+    "static/js/2.b1252c55.chunk.js": "/static/js/2.b1252c55.chunk.js",
+    "static/js/2.b1252c55.chunk.js.map": "/static/js/2.b1252c55.chunk.js.map",
+    "static/js/3.cde24500.chunk.js": "/static/js/3.cde24500.chunk.js",
+    "static/js/3.cde24500.chunk.js.map": "/static/js/3.cde24500.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.df271bf3.chunk.css.map": "/static/css/2.df271bf3.chunk.css.map",
+    "static/css/main.d06164d9.chunk.css.map": "/static/css/main.d06164d9.chunk.css.map",
+    "static/js/2.b1252c55.chunk.js.LICENSE.txt": "/static/js/2.b1252c55.chunk.js.LICENSE.txt",
+    "static/media/Madmin.css": "/static/media/admin.877a59f3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff54d012.js",
+    "static/js/runtime-main.36cd6bc3.js",
     "static/css/2.df271bf3.chunk.css",
-    "static/js/2.6fce863e.chunk.js",
-    "static/css/main.f30d20bd.chunk.css",
+    "static/js/2.b1252c55.chunk.js",
+    "static/css/main.d06164d9.chunk.css",
     "static/js/main.a0850ba1.chunk.js"
   ]
 }
