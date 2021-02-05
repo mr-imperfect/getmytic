@@ -1,0 +1,16 @@
+.rt-table{
+    background-color: rgba(41, 38, 38, 0.781);
+}
+tbody{
+    color: white;
+}
+.ed{
+    margin: 5px;
+}
+td,th{
+    border: 1px solid white;
+}
+thead{
+    color: #ff1062;
+    background-color: rgba(0, 255, 234, 0.959);
+}

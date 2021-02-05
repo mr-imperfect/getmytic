@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .login{
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .forms
+  {
+    width: 400px;
+    height: 400px;
+    /* background-color: rgb(40, 43, 41); */
+    background: linear-gradient(135deg,rgba(192, 142, 50, 0.726),rgba(202, 167, 12, 0.76),rgba(219, 59, 10, 0.863));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  form{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+  }
+  form::before{
+    content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(#d710ff4d,#9630f54d,#9b10944b);
+      clip-path: circle(22%  at 5% 5%);
+      z-index: 22;
+     
+  }
+  form::after{
+    content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(#ff1062,#f5307598,#9b104093);
+      clip-path: circle(22% at 95% 95%);
+      z-index: 22;
+     
+  }
+  form h2{
+    color: red;
+    font-size: 18px;
+  }
+  
+  form h1{
+    color: #ff0162;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0),
+    2px 2px rgba(0, 0, 0, 0.164),3px 3px rgba(0, 0, 0, 0.164);
+  }
+  
+  form input{
+    width: 300px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: none;
+    border-bottom: 1px solid #ff0162;
+  }
+  
+  .user,.pass{
+  position: relative;;
+  }
+  
+  form label{
+    position: absolute;
+    top: 5px;
+    font-size: 15px;
+    transition: 0.5s linear;
+    color: #ff0162;
+  }
+  
+  form input:focus ~ label,
+  form input:valid ~ label
+  {
+    transform: translateY(-15px);
+    font-size: 13px;
+  }
+  
+  button{
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #ff0162;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.822);
+  }
