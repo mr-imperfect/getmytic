@@ -27,8 +27,7 @@ const { json } = require('express')
 // const { default: axios } = require('axios')
 // const { response } = require('express')
 
- app.use(cors({ 
- }))
+ app.use(cors())
  app.post('/login',(req,res)=>{
  db.connect((err)=>{
      if(err){
