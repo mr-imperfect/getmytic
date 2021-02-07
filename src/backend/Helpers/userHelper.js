@@ -8,7 +8,9 @@ userLogin:(userData)=>{
 
     return new Promise((resolve,reject)=>{
 bcrypt.hash(userData.userpassword,10).then(response=>{
-    db.get('getmytic').collection('user').insertOne({"userusername":userData.userusername,"userpassword":response})
+    db.get('getmytic').collection('user').insertOne({"userusername":userData.userusername,"userpassword":response}).then((resp)=>{
+        resolve(resp.ops[0].userusername)
+    })
 
 
 })

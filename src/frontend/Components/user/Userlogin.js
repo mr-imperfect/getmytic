@@ -1,11 +1,14 @@
 import axios from 'axios'
 import React,{Component} from 'react'
+import { Redirect,Link} from 'react-router-dom'
+
 import './Userlogin.css'
 class Userlogin extends Component{
 
     state={
         userusername:"",
-        userpassword:""
+        userpassword:"",
+        user:""
     }
 
     setDetail=(event)=>{
@@ -21,11 +24,24 @@ class Userlogin extends Component{
             userusername:this.state.userusername,
             userpassword:this.state.userpassword
         }
-        axios.post('http://localhost:3001/',user)
+        axios.post('http://localhost:3001/',user).then((response)=>{
+            console.log(response.data.usercreated);
+            this.setState({
+                user:response.data.usercreated
+            })
+                // return <Redirect to={{pathname:"/usersignin"}}/>   
+                         
+            
+        })
     }
 
 
     render(){
+        if(this.state.user){
+            return <Redirect to={{pathname:"/usersignin"}}/>   
+                     
+        }
+    
 
         return(
 
@@ -53,7 +69,7 @@ class Userlogin extends Component{
                     <div className="sign">
                     <button onClick={this.passValue} type="button">Sign Up</button>
                     </div>
-                    <a href="">Already have an account?Login</a>
+                    <Link to="/usersignin">Already have an account?Login</Link>
                 </form>
                 </div>
                

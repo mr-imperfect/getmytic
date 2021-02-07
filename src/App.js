@@ -55,7 +55,7 @@ export default class App extends Component {
              <Route exact path="/"> <Signin/> </Route>  */}
 
           
-                 <Route  exact  path="/" exact> <Usersignin/></Route>
+                 <Route  exact  path="/" exact> <Userlogin/></Route>
                  
                  <Admincontext>   
                    
@@ -75,7 +75,7 @@ export default class App extends Component {
 
            {/* <Route path="/adminloginerror"> <Adminloginerror/> </Route> */}
 
-           <Route path="/userlogin"> <Userlogin/></Route>
+           <Route path="/usersignin"> <Usersignin/></Route>
            {/* <Route path="/userlist"> <Userlist/></Route> */}
            <Route path="/adminlogin"> <Signin/> </Route> 
            <Route path="/movieredirect"> <Movieredirect/>

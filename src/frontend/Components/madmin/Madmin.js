@@ -73,9 +73,9 @@ componentDidMount(){
 <h2>admin</h2>
 </div>
 
-<div className="dashboard">
+{/* <div className="dashboard">
  <Link to="/admin/dashboard"> <h4>Dashboard</h4></Link>
-</div>
+</div> */}
 {/* <div className="dashboard">
 <Link to="/owners"> <h4>Owners</h4></Link>
 </div> */}
@@ -85,21 +85,21 @@ componentDidMount(){
 <div className="dashboard">
 <Link to="/admin/userlist"><h4>Users</h4></Link>
 </div>
-<div className="dashboard">
+{/* <div className="dashboard">
 <h4>Bookings</h4>
-</div> 
+</div>  */}
 <div className="dashboard">
-<h4>Movies</h4>
+<Link to="/adminmovieedit"><h4>Movies</h4></Link>
 </div>
 <div className="dashboard">
 <Link to="/addmovie"> <h4>Add Movie</h4></Link>
 </div>
-<div className="dashboard">
+{/* <div className="dashboard">
 <Link to="/addowner"> <h4>Add Owner</h4></Link>
-</div>
-<div className="dashboard">
+</div> */}
+{/* <div className="dashboard">
 <Link to="/editprofile"> <h4>Edit Profile</h4></Link>
-</div>
+</div> */}
 <div className="dashboard">
 <Link to="/movieredirect"> <h4>Added Movies</h4></Link>
 </div>

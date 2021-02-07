@@ -79,7 +79,7 @@ class Usersignin extends Component{
                     <div className="sign">
                     <button onClick={this.passValue} type="button">Sign In</button>
                     </div>
-                    <Link to="/userlogin">Dont have an account?</Link>
+                    <Link to="/">Dont have an account?</Link>
                 </form>
                 </div>
                

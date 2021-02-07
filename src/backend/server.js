@@ -133,7 +133,14 @@ console.log("database connected for admin verification");
             throw err
         }else{
             console.log("database connected successsfully :)");
-            userHelper.userLogin(req.body)
+            userHelper.userLogin(req.body).then((response)=>{   
+                console.log(response);    
+                if(response){
+                    res.json({"usercreated":true})
+
+                }
+              
+            })
         }
     })
  })
@@ -215,15 +222,10 @@ app.delete('/deletemovie/:id',(req,res)=>{
         }
     })
 })
-function verifyLogin(req,res,next){
 
-    
- 
-
-}
-const PORT=3001
- app.listen(PORT,()=>{
-     console.log(`server running in ${PORT} port`);  
+const port=3001
+ app.listen( process.env.PORT || port,()=>{
+     console.log(`server running in ${port} port`);  
  }) 
 
 
