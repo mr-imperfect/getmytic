@@ -50,7 +50,7 @@ constructor(props){
         
            <div className="header">
            <div className="innerheader">
-           <h2>moviecafe</h2>
+           <h2>getmytic</h2>
            <h4>hii {this.context.adminName}</h4>
            </div>
 
