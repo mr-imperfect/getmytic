@@ -16,29 +16,29 @@ class Madmin extends Component{
 constructor(props){
   super(props);
 }
-state={
+// state={
 
-}
-componentDidMount(){
-  const config={headers:{
-    authorization:"Bearer "+localStorage.getItem("admintoken")
-  }
-  }
+// }
+// componentDidMount(){
+//   const config={headers:{
+//     authorization:"Bearer "+localStorage.getItem("admintoken")
+//   }
+//   }
 
 
-    axios.get("http://localhost:3001/adminverify",config).then((response)=>{
-      console.log(response.data);
-      this.setState({
-        user:response.data.logged
+//     axios.get("http://localhost:3001/adminverify",config).then((response)=>{
+//       console.log(response.data);
+//       this.setState({
+//         user:response.data.logged
 
-      })
+//       })
      
-    })
-}
+//     })
+// }
   render(){
-    if(this.state.user===false){
-      return <Redirect to={{pathname:"/adminlogin"}}/>
-    }
+    // if(this.state.user===false){
+    //   return <Redirect to={{pathname:"/adminlogin"}}/>
+    // }
    
    
   

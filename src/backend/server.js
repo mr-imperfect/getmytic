@@ -86,44 +86,44 @@ const { json } = require('express')
     
  })
  
- app.get('/adminverify',(req,res)=>{
-     db.connect((err)=>{
-         if(err){
-             throw err
-         }else{
-console.log("database connected for admin verification");
+//  app.get('/adminverify',(req,res)=>{
+//      db.connect((err)=>{
+//          if(err){
+//              throw err
+//          }else{
+// console.log("database connected for admin verification");
             
-    let authheader=req.headers.authorization;
-    console.log(authheader);
-    if(authheader==undefined){
-        console.log("token is undefined");
-        console.log("logged false");
-       res.json({"logged":false})
+//     // let authheader=req.headers.authorization;
+//     // console.log(authheader);
+//     // if(authheader==undefined){
+//     //     console.log("token is undefined");
+//     //     console.log("logged false");
+//     //    res.json({"logged":false})
         
 
-    }
+//     // }
 
-    else{
-     let token=authheader.split(" ")[1]
+// //     else{
+// //      let token=authheader.split(" ")[1]
 
-     jwt.verify(token,"getmytic",(err,success)=>{
-         if(err){
-             throw err
-         }else{
-            console.log("logged true");
+// //      jwt.verify(token,"getmytic",(err,success)=>{
+// //          if(err){
+// //              throw err
+// //          }else{
+// //             console.log("logged true");
             
-         res.json({"logged":true})
-         }
-     })
+// //          res.json({"logged":true})
+// //          }
+// //      })
 
      
      
- }
+// //  }
              
-         }
-     })
+//          }
+//      })
 
- })
+//  })
 
  app.post('/',(req,res)=>{
     db.connect((err)=>{

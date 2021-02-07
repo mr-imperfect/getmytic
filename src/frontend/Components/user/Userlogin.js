@@ -37,7 +37,7 @@ class Userlogin extends Component{
 
 
     render(){
-        if(this.state.user){
+        if(this.state.user===true){
             return <Redirect to={{pathname:"/usersignin"}}/>   
                      
         }
