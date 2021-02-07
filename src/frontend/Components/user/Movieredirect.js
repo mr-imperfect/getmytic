@@ -18,7 +18,7 @@ export default class Movieredirect extends Component {
         everydata:[]
     }
     componentDidMount(){
-        axios.get('http://gentle-refuge-60854.herokuapp/movieredirect').then((response)=>{
+        axios.get('https://gentle-refuge-60854.herokuapp.com/movieredirect').then((response)=>{
             // console.log(response.data);
             this.setState({
                 everydata:response.data
