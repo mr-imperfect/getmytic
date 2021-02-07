@@ -35,7 +35,7 @@ export default class Signin extends Component {
                 loggedStatus:response.data.logged
             })
 
-            localStorage.setItem("admintoken",response.data.token)
+            // localStorage.setItem("admintoken",response.data.token)
           
         console.log(this.state.loggedStatus);
             if(this.state.loggedStatus===false){
